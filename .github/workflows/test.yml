@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get Rust toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+        toolchain: stable
+        override: true
+
+    - name: Run cargo test w/ -D warnings
+      run: cargo test headless -- --test-threads=1
+      env:
+        RUSTFLAGS: "-D warnings"

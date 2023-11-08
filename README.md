@@ -1,5 +1,7 @@
 # Toy Bloom Filter
 
+[![Test](https://github.com/eduardonunesp/toy-bloom-filter/actions/workflows/test.yml/badge.svg)](https://github.com/eduardonunesp/toy-bloom-filter/actions/workflows/test.yml)
+
 ## Introduction
 
 This is a toy implementation of a Bloom filter in Rust. It is not meant to be used in production, but rather as a learning tool to understand how Bloom filters work.
