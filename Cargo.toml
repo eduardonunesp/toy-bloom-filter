@@ -1,0 +1,6 @@
+[package]
+name = "toy-bloom-filter"
+version = "0.1.0"
+authors = ["Eduardo Pereira <eduardonunesp@gmail.com>"]
+edition = "2021"
+description = "A toy bloom filter implementation in Rust"
